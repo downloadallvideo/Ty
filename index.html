@@ -1,0 +1,114 @@
+<!DOCTYPE html> <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   ,
+    <title>Video Downloader</title>
+    <style>
+        /* CSS styles */
+        /* ... (add your CSS styles here) ... */
+    </style>
+    <script>
+        // JavaScript code
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add event listener to search button
+            document.getElementById('searchButton').addEventListener('click', function(event) {
+                event.preventDefault();
+                // Code to handle search functionality
+                var videoUrl = document.getElementById('videoUrl').value;
+                var platform = document.getElementById('platformSelect').value;
+                // ... (Add your code to search and display video formats) ...
+            });
+
+            // Add event listener to download button
+            document.getElementById('downloadButton').addEventListener('click', function(event) {
+                event.preventDefault();
+                // Code to handle download functionality
+                // ...
+                // Show ad upon download
+                showAd();
+                // Display download notification
+                showDownloadNotification();
+            });
+
+            // Add event listener to close button
+            document.getElementById('closeButton').addEventListener('click', function(event) {
+                event.preventDefault();
+                // Code to close the ad
+                // ...
+            });
+
+            // Add event listener to back button
+            document.getElementById('backButton').addEventListener('click', function(event) {
+                event.preventDefault();
+                // Code to go back after ad completion
+                // ...
+            });
+        });
+
+        function showAd() {
+            // Code to show ad upon download
+            // ...
+        }
+
+        function showDownloadNotification() {
+            var notification = document.getElementById('downloadNotification');
+            notification.style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <!-- Header section with logo and navigation -->
+        <div class="logo">
+            <!-- ... (add your logo code here) ... -->
+        </div>
+        <nav>
+            <!-- ... (add your navigation code here) ... -->
+        </nav>
+    </header>
+
+    <main>
+        <section id="homeSection">
+            <h1>Welcome to Video Downloader</h1>
+            <!-- Display options to choose platform -->
+            <select id="platformSelect">
+                <option value="facebook">Download Facebook Video</option>
+                <option value="youtube">Download YouTube Video</option>
+                <option value="tiktok">Download TikTok Video</option>
+                <option value="instagram">Download Instagram Video</option>
+            </select>
+            <!-- Input field to enter video URL -->
+            <input type="text" id="videoUrl" placeholder="Enter video URL" required>
+            <button id="searchButton" type="submit">Search</button>
+        </section>
+
+        <section id="downloadSection">
+            <h2>Video Formats</h2>
+            <div id="videoResults">
+                <!-- Display search results and video formats here -->
+            </div>
+            <button id="downloadButton" type="submit">Download</button>
+        </section>
+
+        <!-- Banner ads section -->
+        <section id="bannerAds">
+            <!-- Display 5 banner ads here -->
+        </section>
+    </main>
+
+    <footer>
+        <!-- Download notification and ad section -->
+        <div id="downloadNotification" style="display: none;">
+            <p>Your video download has started.</p>
+        </div>
+        <div id="adSection">
+            <!-- Display ad and ad duration here -->
+            <!-- Add close button -->
+            <!-- Add back button after ad completion -->
+        </div>
+    </footer>
+</body>
+</html>
